@@ -8,8 +8,6 @@ if (Meteor.isClient) {
 
 var queue = new Joby.Queue('queue');
 
-console.log(Meteor.isServer ? 'server' : 'client')
-
 Tinytest.add('queue has a name', function (test) {
   test.equal(queue.name, 'queue');
 });

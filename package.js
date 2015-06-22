@@ -11,9 +11,9 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
-  api.addFiles('joby-meteor.js');
-  api.use('mongo', ['client', 'server']);
+  api.versionsFrom('1.1.0.2', ['server']);
+  api.addFiles('joby-meteor.js', ['server']);
+  api.use('mongo', ['server']);
 });
 
 Package.onTest(function(api) {
